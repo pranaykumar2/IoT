@@ -86,7 +86,16 @@ In a **peer-to-peer architecture**, devices communicate directly with each other
 
 The **core IoT functional stack** is a layered architecture that describes the different components and functions involved in an **IoT system.** It typically includes the following layers:
 
-**| Layer | Description |** |---|---| | **1. Things (Sensors and Actuators)** | This layer consists of the physical devices that collect data from the environment (sensors) or perform actions in the environment (actuators). | | **2. Connectivity Layer** | This layer provides the means for devices to communicate with each other and with the internet. It includes various wireless and wired communication technologies. | | **3. Edge Computing Layer** | This layer performs data processing and analysis close to the edge of the network, reducing the amount of data that needs to be transmitted to the cloud. | | **4. Data Accumulation Layer** | This layer is responsible for storing and managing the data collected from devices. | | **5. Application Layer** | This layer provides the user interface and applications that interact with the IoT system. | | **6. Collaboration and Processes Layer** | This layer enables collaboration and communication between different IoT systems and applications. | | **7. Business Layer** | This layer encompasses the business logic and applications that use the data and insights from the IoT system. |
+| **Layer**                     | **Description**                                                                                                                                              |
+|-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **1. Things (Sensors and Actuators)** | This layer consists of the physical devices that collect data from the environment (sensors) or perform actions in the environment (actuators).                                |
+| **2. Connectivity Layer**      | This layer provides the means for devices to communicate with each other and with the internet. It includes various wireless and wired communication technologies. |
+| **3. Edge Computing Layer**    | This layer performs data processing and analysis close to the edge of the network, reducing the amount of data that needs to be transmitted to the cloud.    |
+| **4. Data Accumulation Layer** | This layer is responsible for storing and managing the data collected from devices.                                                                         |
+| **5. Application Layer**       | This layer provides the user interface and applications that interact with the IoT system.                                                                 |
+| **6. Collaboration and Processes Layer** | This layer enables collaboration and communication between different IoT systems and applications.                                                       |
+| **7. Business Layer**          | This layer encompasses the business logic and applications that use the data and insights from the IoT system.                                             |
+
 
 ### Resource-Constrained Devices
 
