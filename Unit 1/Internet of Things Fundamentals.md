@@ -104,7 +104,7 @@ The **core IoT functional stack** is a layered architecture that describes the d
 **Examples** of resource-constrained devices include:
 
 - **Wireless sensors**
-- **Wearable devices**
+- **Wearable devices**=
 - **Smart meters**
 
 **Challenges** in designing and deploying resource-constrained devices:
@@ -157,15 +157,15 @@ These include:
 
 #### Table of Societal Benefits of IoT by Domain:
 
-| Domain                                                        | Benefits                                                                              |
-| ------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| **Consumer**                                                  | Smart homes, wearable devices, connected cars                                         |
-| **Enterprise**                                                | Improved efficiency, reduced costs, enhanced customer service, better decision-making |
-| **Industrial**                                                | Industrial automation, supply chain management, predictive maintenance                |
-| **Healthcare**                                                | Remote patient monitoring, chronic disease management, improved diagnostics           |
-| **Transportation**                                            | Optimized routes, reduced fuel costs, improved safety                                 |
-| **Urban Development**                                         | Smart cities, environmental monitoring, traffic management                            |
-| **Agriculture**                                               | Precision farming, livestock monitoring, optimized irrigation                         |
+| Domain                | Benefits                                                                              |
+| --------------------- | ------------------------------------------------------------------------------------- |
+| **Consumer**          | Smart homes, wearable devices, connected cars                                         |
+| **Enterprise**        | Improved efficiency, reduced costs, enhanced customer service, better decision-making |
+| **Industrial**        | Industrial automation, supply chain management, predictive maintenance                |
+| **Healthcare**        | Remote patient monitoring, chronic disease management, improved diagnostics           |
+| **Transportation**    | Optimized routes, reduced fuel costs, improved safety                                 |
+| **Urban Development** | Smart cities, environmental monitoring, traffic management                            |
+| **Agriculture**       | Precision farming, livestock monitoring, optimized irrigation                         |
 
 ### Risks, Privacy, and Security
 

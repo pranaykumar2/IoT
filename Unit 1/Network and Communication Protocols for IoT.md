@@ -29,16 +29,16 @@ Two main models describe internet structure:
 
 **Important IoT Wireless Protocols:**
 
-|Protocol|Description|
-|:--|:--|
-|LPWAN|Low-Power Wide Area Network, designed for low-power, long-range communication, ideal for large-scale deployments of IoT devices like sensors. Examples: LoRa, SigFox, LTE-M, NB-IoT.|
-|Cellular|NB-IoT and LTE-M standards use existing cellular networks for low-power, low-cost IoT communication.|
-|Bluetooth LE|Low-power, short-range communication protocol commonly used for wearable devices and home automation.|
-|Zigbee|Low-power, low-data-rate protocol based on the IEEE 802.15.4 standard, commonly used for home and building automation.|
-|NFC|Near Field Communication protocol for very short-range communication (up to 4 cm), often used for payment systems and check-in systems.|
-|RFID|Radio-frequency identification uses electromagnetic fields to automatically identify and track tags attached to objects. Passive RFID relies on reader-emitted energy, while Active RFID uses battery-powered tags. I-CODE is an active RFID protocol for secure long-range communication.|
-|Wi-Fi|IEEE 802.11 a/b/g/n specifications for standard wireless networking. 802.11n provides the highest data throughput but consumes more power.|
-|Ethernet|A wired networking technology often used for connecting gateways to the internet.|
+| Protocol     | Description                                                                                                                                                                                                                                                                                |
+| :----------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| LPWAN        | Low-Power Wide Area Network, designed for low-power, long-range communication, ideal for large-scale deployments of IoT devices like sensors. Examples: LoRa, SigFox, LTE-M, NB-IoT.                                                                                                       |
+| Cellular     | NB-IoT and LTE-M standards use existing cellular networks for low-power, low-cost IoT communication.                                                                                                                                                                                       |
+| Bluetooth LE | Low-power, short-range communication protocol commonly used for wearable devices and home automation.                                                                                                                                                                                      |
+| Zigbee       | Low-power, low-data-rate protocol based on the IEEE 802.15.4 standard, commonly used for home and building automation.                                                                                                                                                                     |
+| NFC          | Near Field Communication protocol for very short-range communication (up to 4 cm), often used for payment systems and check-in systems.                                                                                                                                                    |
+| RFID         | Radio-frequency identification uses electromagnetic fields to automatically identify and track tags attached to objects. Passive RFID relies on reader-emitted energy, while Active RFID uses battery-powered tags. I-CODE is an active RFID protocol for secure long-range communication. |
+| Wi-Fi        | IEEE 802.11 a/b/g/n specifications for standard wireless networking. 802.11n provides the highest data throughput but consumes more power.                                                                                                                                                 |
+| Ethernet     | A wired networking technology often used for connecting gateways to the internet.                                                                                                                                                                                                          |
 
 **Considerations When Choosing a Wireless Protocol:**
 

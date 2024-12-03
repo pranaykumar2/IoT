@@ -92,14 +92,14 @@ NFV can be used to virtualize home gateways. A virtualized gateway in the cloud 
 
 #### **Difference Between SDN and NFV:**
 
-|Feature|SDN|NFV|
-|---|---|---|
-|**Focus**|Centralized network control and management.|Virtualizing network functions.|
-|**Functionality**|Separates control and data plane.|Virtualizes network functions onto commodity hardware.|
-|**Communication Protocol**|Uses OpenFlow.|No standardized protocol yet; driven by ETSI NFV.|
-|**Initiative Supporters**|Primarily driven by enterprise networking companies.|Primarily driven by telecom service providers and operators.|
-|**Applications**|Primarily used in enterprise networks and data centers.|Used in telecom networks, data centers, and cloud environments.|
-|**Cost Implications**|Can reduce network infrastructure costs.|Can reduce capital expenditure and operating expenses.|
+| Feature                    | SDN                                                     | NFV                                                             |
+| -------------------------- | ------------------------------------------------------- | --------------------------------------------------------------- |
+| **Focus**                  | Centralized network control and management.             | Virtualizing network functions.                                 |
+| **Functionality**          | Separates control and data plane.                       | Virtualizes network functions onto commodity hardware.          |
+| **Communication Protocol** | Uses OpenFlow.                                          | No standardized protocol yet; driven by ETSI NFV.               |
+| **Initiative Supporters**  | Primarily driven by enterprise networking companies.    | Primarily driven by telecom service providers and operators.    |
+| **Applications**           | Primarily used in enterprise networks and data centers. | Used in telecom networks, data centers, and cloud environments. |
+| **Cost Implications**      | Can reduce network infrastructure costs.                | Can reduce capital expenditure and operating expenses.          |
 
 ### **Basics of IoT Systems Management with NETCONF-YANG**
 
