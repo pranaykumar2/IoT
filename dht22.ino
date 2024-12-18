@@ -1,18 +1,11 @@
 #include "DHT.h"
 
 #define DHTPIN 2     
-#define DHTTYPE DHT22   
+#define DHTTYPE DHT22   // DHT 22  (AM2302), AM2321
 
 DHT dht(DHTPIN, DHTTYPE);
 
-const int buzzer = 9;
-
-LiquidCrystal_I2C lcd(0x27, 16, 2);
-
 void setup() {
-  pinMode(0, OUTPUT);
-  pinMode(1, OUTPUT);
-  pinMode(buzzer, OUTPUT);
   Serial.begin(115200);
   Serial.println(F("DHT22 example!"));
 
@@ -23,35 +16,46 @@ void loop() {
   float temperature = dht.readTemperature();
   float humidity = dht.readHumidity();
 
+  // Check if any reads failed and exit early (to try again).
+  if (isnan(temperature) || isnan(humidity)) {
+    Serial.println(F("Failed to read from DHT sensor!"));
+    return;
+  }
+
   Serial.print(F("Humidity: "));
   Serial.print(humidity);
   Serial.print(F("%  Temperature: "));
   Serial.print(temperature);
   Serial.println(F("°C "));
 
-  lcd.setCursor(0,1);
-  lcd.print("Humidity: ");
-  lcd.setCursor(10, 1);
-  lcd.print(humidity);
-  lcd.print(" *C ");
-
-  lcd.setCursor(0,0);
-  lcd.print("Temperature :");
-  lcd.setCursor("15, 0");
-  lcd.print(temperature);
-  lcd.print(" *C ");
-
-  if(temperature > 25) {
-    digitalWrite(buzzer, HIGH);
-    digitalWritr(0, HIGH);
-    digitalWrite(1, LOW);
-  }
-
-  else {
-    digitalWrite(buzzer, LOW);
-    digitalWritr(0, LOW);
-    digitalWrite(1, HIGH);
-  }
-
+  // Wait a few seconds between measurements.
   delay(2000);
 }
+
+/*digram.json
+{
+  "version": 1,
+  "author": "Uri Shaked",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "id": "uno",
+      "type": "wokwi-arduino-uno",
+      "top": 160,
+      "left": 20
+    },
+    {
+      "id": "dht",
+      "type": "wokwi-dht22",
+      "top": 0,
+      "left": 70
+    }
+  ],
+  "connections": [
+    ["uno:GND.1", "dht:GND", "black", ["v-20", "*", "v5"]],
+    ["uno:2", "dht:SDA", "green", ["v-16", "*", "h0"]],
+    ["uno:5V", "dht:VCC", "red", ["v20", "*", "h0"]]
+  ]
+}
+
+*/
