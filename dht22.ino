@@ -10,8 +10,8 @@ const int buzzer = 9;
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
 void setup() {
+  pinMode(0, OUTPUT);
   pinMode(1, OUTPUT);
-  pinMode(2, OUTPUT);
   pinMode(buzzer, OUTPUT);
   Serial.begin(115200);
   Serial.println(F("DHT22 example!"));
@@ -43,14 +43,14 @@ void loop() {
 
   if(temperature > 25) {
     digitalWrite(buzzer, HIGH);
-    digitalWritr(1, HIGH);
-    digitalWrite(2, LOW);
+    digitalWritr(0, HIGH);
+    digitalWrite(1, LOW);
   }
 
   else {
     digitalWrite(buzzer, LOW);
-    digitalWritr(1, LOW);
-    digitalWrite(2, HIGH);
+    digitalWritr(0, LOW);
+    digitalWrite(1, HIGH);
   }
 
   delay(2000);
